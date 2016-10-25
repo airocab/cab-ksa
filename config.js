@@ -5,7 +5,7 @@ var config  = {};
 var CONNECTION; 
 var sns;
 var mongojs     = require('mongojs')
-var db = mongojs('userVOQ:JTMlFCEumUgruGDV@127.0.0.1:27017/sampledb')
+var db = mongojs(process.env.MONGODB_CONNECTION);
 
 config.GOOGLEKEY            = 'AIzaSyDsF5M5q0AWpHc4rgBBJ_w_rEr3ysDCGGM';
 config.SNS_accessKeyId      = 'AKIAJBQG3Y325KV45M3Q';
